@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AndroidERey\'storant</string>
+    <string name="entree_title">Entrées</string>
+    <string name="plat_title">Plats</string>
+    <string name="desert_title">Desserts</string>
+    <string name="panier_title">Panier</string>
+    <string name="img_desc">logo img</string>
+
+</resources>

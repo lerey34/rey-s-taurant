@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".EntreeActivity">
+
+    <TextView
+        android:id="@+id/entreeTitle"
+        style="@style/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Entrées"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/entreeList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entreeTitle"
+        app:layout_constraintBottom_toTopOf="@+id/btnPlat"/>
+
+    <TextView
+        style="@style/titleNavBar"
+        android:id="@+id/entree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Entrées"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/plat"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        style="@style/titleNavBar"
+        android:id="@+id/plat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="plat"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/panier"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        style="@style/titleNavBar"
+        android:id="@+id/dessert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="dessert"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/entree" />
+
+    <TextView
+        android:id="@+id/panier"
+        style="@style/titleNavBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Panier"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dessert" />
+
+    <ImageView
+        style="@style/titleNavBar"
+        android:id="@+id/imgEntree"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/entree"
+        app:layout_constraintEnd_toEndOf="@+id/entree"
+        app:layout_constraintStart_toStartOf="@+id/entree"
+        app:srcCompat="@drawable/entree" />
+
+    <ImageView
+        style="@style/titleNavBar"
+        android:id="@+id/imgDessert"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/plat"
+        app:layout_constraintEnd_toEndOf="@+id/plat"
+        app:layout_constraintStart_toStartOf="@+id/plat"
+        app:srcCompat="@drawable/plat" />
+
+    <ImageView
+        style="@style/titleNavBar"
+        android:id="@+id/imgPlat"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/dessert"
+        app:layout_constraintEnd_toEndOf="@+id/dessert"
+        app:layout_constraintStart_toStartOf="@+id/dessert"
+        app:srcCompat="@drawable/dessert" />
+
+    <ImageView
+        android:id="@+id/btnEntree"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/entree"
+        app:layout_constraintEnd_toEndOf="@+id/entree"
+        app:layout_constraintStart_toStartOf="@id/entree"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/btnPlat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@id/plat"
+        app:layout_constraintEnd_toEndOf="@+id/plat"
+        app:layout_constraintStart_toStartOf="@id/plat"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/btnDessert"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@id/dessert"
+        app:layout_constraintEnd_toEndOf="@+id/dessert"
+        app:layout_constraintStart_toStartOf="@id/dessert"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/btnPanier"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@id/panier"
+        app:layout_constraintEnd_toEndOf="@+id/panier"
+        app:layout_constraintStart_toStartOf="@id/panier"
+        app:srcCompat="@drawable/empty" />
+
+    <ImageView
+        android:id="@+id/imgPanier"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/panier"
+        app:layout_constraintEnd_toEndOf="@+id/panier"
+        app:layout_constraintStart_toStartOf="@+id/panier"
+        app:srcCompat="@drawable/panier" />
+
+    <ImageView
+        android:id="@+id/allImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPanier"
+        app:layout_constraintEnd_toEndOf="@+id/btnPanier"
+        app:srcCompat="@drawable/pastille" />
+
+    <TextView
+        android:id="@+id/all"
+        style="@style/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/allImage"
+        app:layout_constraintEnd_toEndOf="@+id/allImage"
+        app:layout_constraintStart_toStartOf="@+id/allImage"
+        app:layout_constraintTop_toTopOf="@+id/allImage" />
+
+    <Button
+        android:id="@+id/orderPanier"
+        style="@style/titleText"
+        android:layout_width="274dp"
+        android:layout_height="46dp"
+        android:background="@drawable/button_rounded"
+        android:text="Payer : 0 €"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/entreeList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

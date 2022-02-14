@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ic_entree"
+        android:icon="@drawable/entree"
+        android:title="Entrées"/>
+
+    <item
+        android:id="@+id/ic_plat"
+        android:icon="@drawable/plat"
+        android:title="Plats"/>
+
+    <item
+        android:id="@+id/ic_dessert"
+        android:icon="@drawable/dessert"
+        android:title="Deserts"/>
+
+    <item
+        android:id="@+id/ic_panier"
+        android:icon="@drawable/panier"
+        android:title="Panier"/>
+
+</menu>
